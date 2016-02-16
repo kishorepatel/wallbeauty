@@ -1,2 +1,0 @@
-# wallbeauty
-wallpaper app
