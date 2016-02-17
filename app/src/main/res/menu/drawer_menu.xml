@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--TODO: add nice icons-->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single" android:id="@+id/group_primary_actions" android:visible="true" >
+        <item android:id="@+id/action_explore" android:icon="@mipmap/ic_launcher" android:visible="true"
+            android:title="@string/label_explore"/>
+        <item android:id="@+id/action_favourites" android:icon="@mipmap/ic_launcher" android:visible="true"
+            android:title="@string/label_favourites"/>
+        <item android:id="@+id/action_history" android:icon="@mipmap/ic_launcher" android:visible="true"
+            android:title="@string/label_history"/>
+    </group>
+    <group android:checkableBehavior="single" android:visible="true" android:id="@+id/group_secondary_actions">
+        <item android:id="@+id/action_rate" android:icon ="@mipmap/ic_launcher" android:visible="true"
+            android:title="@string/label_rateApp"/>
+        <item android:id="@+id/action_feedback" android:icon="@mipmap/ic_launcher" android:visible="true"
+            android:title="@string/label_feedback"/>
+        <item android:id="@+id/action_otherApps" android:icon="@mipmap/ic_launcher" android:visible="true"
+            android:title="@string/label_otherApps"/>
+    </group>
+    <group android:id="@+id/group_settings_action" android:checkableBehavior="single" android:visible="true">
+        <item android:id="@+id/action_settings" android:visible="true" android:icon="@mipmap/ic_launcher"
+            android:title="@string/label_settings"/>
+    </group>
+</menu>

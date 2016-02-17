@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">WallBeauty</string>
+
+
+    <!--Drawer Layout Activity-->
+    <string name="navigation_close">Naviation Close</string>
+    <string name="navigation_open">Navigation Open</string>
+
+    <!--Nav menu items -->
+    <string name="label_explore">Explore</string>
+    <string name="label_favourites">Favourites</string>
+    <string name="label_history">History</string>
+    <string name="label_rateApp">Rate this App</string>
+    <string name="label_feedback">Send Feedback</string>
+    <string name="label_otherApps">Other Apps</string>
+    <string name="label_settings">Settings</string>
+
 </resources>
