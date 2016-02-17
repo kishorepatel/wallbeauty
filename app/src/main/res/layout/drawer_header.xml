@@ -5,7 +5,7 @@
     android:orientation="vertical">
     <ImageView
         android:layout_alignParentTop="true"
-        android:src="@drawable/drawer_header_img"
+        android:src="@drawable/hearder"
         android:scaleType="centerCrop"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
@@ -15,7 +15,7 @@
         android:layout_alignParentTop="true"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:textColor="@color/primary_light"
+        android:textColor="@color/text_color"
         android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Title"
         android:paddingBottom="24dp"
         android:paddingLeft="16dp"/>

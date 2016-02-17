@@ -2,14 +2,34 @@
 <resources>
 
     <color name="colorPrimary">#03A9F4</color>
+     <color name="colorPrimaryDark">#0288D1</color>
+     <color name="primary_light">#B3E5FC</color>
+     <color name="colorAccent">#FF5252</color>
+     <color name="primary_text">#212121</color>
+     <color name="secondary_text">#727272</color>
+     <color name="icons">#FFFFFF</color>
+     <color name="divider">#B6B6B6</color>
+
+
+    <color name="white">#FFFFFF</color>
+
+
+    <color name="color_700">#3D4854</color> <!--toool bar-->
+    <color name="color_800">#3B434E</color> <!--card-->
+    <color name="color_900">#313941</color> <!--between-->
+    <color name="color_1000">#333337</color> <!--between circle-->
+    <color name="green">#2EAB42</color>
+    <color name="red">#EB5656</color>
+    <color name="green_other">#18C513</color> <!--icon bluetooth-->
+    <color name ="text_color">#748295</color> <!--like text color-->
+
+
+    <!--<color name="colorPrimary">#03A9F4</color>
     <color name="colorPrimaryDark">#0288D1</color>
     <color name="primary_light">#B3E5FC</color>
     <color name="colorAccent">#FF5252</color>
     <color name="primary_text">#212121</color>
     <color name="secondary_text">#727272</color>
     <color name="icons">#FFFFFF</color>
-    <color name="divider">#B6B6B6</color>
-
-
-    <color name="white">#FFFFFF</color>
+    <color name="divider">#B6B6B6</color>-->
 </resources>
