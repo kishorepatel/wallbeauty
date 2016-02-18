@@ -1,6 +1,8 @@
 package in.blogspot.upsolving.wallbeauty.explore;
 
 import android.os.Bundle;
+import android.widget.AbsListView;
+import android.widget.GridView;
 
 import in.blogspot.upsolving.wallbeauty.DrawerLayoutActivity;
 
