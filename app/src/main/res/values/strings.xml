@@ -15,4 +15,8 @@
     <string name="label_otherApps">Other Apps</string>
     <string name="label_settings">Settings</string>
 
+    <!--error screen-->
+    <string name = "connection_error_msg">Check your connection and try again</string>
+    <string name="retry">Retry</string>
+    <string name="report_problem"><u>Report a problem</u></string>
 </resources>

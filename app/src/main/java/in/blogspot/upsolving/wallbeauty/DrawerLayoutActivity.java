@@ -14,6 +14,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import in.blogspot.upsolving.wallbeauty.explore.ExploreActivity;
+
 /**
  * Created by Kishore on 2/17/2016.
  */

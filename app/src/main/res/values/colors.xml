@@ -13,6 +13,7 @@
 
     <color name="white">#FFFFFF</color>
 
+    <color name="transparent_error_page_color">#c8333337</color>
 
     <color name="color_700">#3D4854</color> <!--toool bar-->
     <color name="color_800">#3B434E</color> <!--card-->
