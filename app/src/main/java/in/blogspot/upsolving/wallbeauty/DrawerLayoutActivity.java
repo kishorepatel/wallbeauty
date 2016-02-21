@@ -1,5 +1,7 @@
 package in.blogspot.upsolving.wallbeauty;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
@@ -15,6 +17,9 @@ import android.view.View;
 import android.widget.TextView;
 
 import in.blogspot.upsolving.wallbeauty.explore.ExploreActivity;
+import in.blogspot.upsolving.wallbeauty.favourites.FavouritesActivity;
+import in.blogspot.upsolving.wallbeauty.history.HistoryActivity;
+import in.blogspot.upsolving.wallbeauty.utils.Util;
 
 /**
  * Created by Kishore on 2/17/2016.
@@ -101,22 +106,26 @@ public class DrawerLayoutActivity extends AppCompatActivity{
                 startActivity(intent);
             }
             else if(id == R.id.action_favourites){
-
+                Intent intent = new Intent(DrawerLayoutActivity.this, FavouritesActivity.class);
+                startActivity(intent);
             }
             else if(id == R.id.action_history){
-
+                Intent intent = new Intent(DrawerLayoutActivity.this, HistoryActivity.class);
+                startActivity(intent);
             }
             else if(id == R.id.action_rate){
-
+                showRateDialog();
             }
             else if(id == R.id.action_feedback){
-
+                Util.sendMail(DrawerLayoutActivity.this, getString(R.string.feedback));
             }
             else if(id == R.id.action_otherApps){
-
+                //TODO
+                Util.goToMyAppHome(DrawerLayoutActivity.this);
             }
             else if(id == R.id.action_settings){
-
+                Intent intent = new Intent(DrawerLayoutActivity.this, SettingsActivity.class);
+                startActivity(intent);
             }
             return false;
         }
@@ -125,5 +134,20 @@ public class DrawerLayoutActivity extends AppCompatActivity{
 
     protected void setTitle(String msg){
         mTitleText.setText(msg);
+    }
+
+
+    private void showRateDialog(){
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle(R.string.rate_this_app);
+        builder.setMessage(R.string.rate_this_app_content);
+        builder.setPositiveButton(R.string.yes_label, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Util.goToAppStore(DrawerLayoutActivity.this);
+            }
+        });
+        builder.setNegativeButton(R.string.later_label, null);
+        builder.show();
     }
 }

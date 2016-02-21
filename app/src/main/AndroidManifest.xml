@@ -35,6 +35,8 @@
             android:parentActivityName=".explore.ExploreActivity"/>
 
 
+        <activity android:name=".PhotoDetailActivity"
+            android:parentActivityName=".explore.ExploreActivity"/>
     </application>
 
 </manifest>
