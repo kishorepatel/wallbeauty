@@ -1,17 +1,15 @@
 package in.blogspot.upsolving.wallbeauty.explore;
 
+import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
@@ -30,10 +28,11 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.List;
 
+import in.blogspot.upsolving.wallbeauty.ErrorReportActivity;
 import in.blogspot.upsolving.wallbeauty.PhotoDetailActivity;
 import in.blogspot.upsolving.wallbeauty.R;
+import in.blogspot.upsolving.wallbeauty.utils.Util;
 
 /**
  * Created by Kishore on 2/18/2016.
@@ -60,7 +59,6 @@ public class RecentFragment extends Fragment {
         mPhotoGrid = (GridView)rootView.findViewById(R.id.photo_grid);
         photoLinks = new ArrayList<>();
         adapter = new PhotoGridAdapter();
-        new PhotoAsyncList().execute();
 
         mPhotoGrid.setAdapter(adapter);
         mPhotoGrid.setOnItemClickListener(mGridOnItemClickListener);
@@ -68,6 +66,24 @@ public class RecentFragment extends Fragment {
         return rootView;
     }
 
+
+
+    //---------------------------ERROR HANDLING----------------------
+
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        if(!Util.isInternetConnected(getActivity())){
+            Intent intent = new Intent(getActivity(), ErrorReportActivity.class);
+            startActivity(intent);
+        }
+        else{
+            new PhotoAsyncList().execute();
+        }
+    }
+
+    //---------------------------------------------------------------------------
 
     private AdapterView.OnItemClickListener mGridOnItemClickListener
             = new AdapterView.OnItemClickListener() {

@@ -16,6 +16,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import java.util.logging.Handler;
+
 import in.blogspot.upsolving.wallbeauty.explore.ExploreActivity;
 import in.blogspot.upsolving.wallbeauty.favourites.FavouritesActivity;
 import in.blogspot.upsolving.wallbeauty.history.HistoryActivity;
@@ -64,6 +66,7 @@ public class DrawerLayoutActivity extends AppCompatActivity{
         FragmentManager manager = getSupportFragmentManager();
         manager.beginTransaction().replace(R.id.data_container, fragment).commit();
     }
+
 
 
 

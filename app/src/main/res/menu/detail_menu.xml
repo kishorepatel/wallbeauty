@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_set_wallpaper"
+        android:enabled="true"
+        android:title="Set as Wallpaper"
+        app:showAsAction="never"/>
+    <item android:id="@+id/action_set_on_contact"
+        android:enabled="true"
+        android:title="Set for Contact"
+        app:showAsAction="never"/>
+    <item android:id="@+id/action_share"
+        android:enabled="true"
+        android:title="Share"
+        app:showAsAction="never"/>
+    <item android:id="@+id/action_download"
+        android:enabled="true"
+        android:title="Download"
+        app:showAsAction="never"/>
+    <item android:id="@+id/action_add_to_favourite"
+        android:enabled="true"
+        android:title="Add to favourite"
+        app:showAsAction="never"/>
+    <item android:id="@+id/action_report"
+        android:enabled="true"
+        android:title="Report"
+        app:showAsAction="never"/>
+</menu>
