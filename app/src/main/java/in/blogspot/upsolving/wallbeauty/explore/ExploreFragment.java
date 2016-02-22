@@ -40,6 +40,7 @@ public class ExploreFragment extends Fragment {
         mExplorePagerAdapter = new ExplorePagerAdapter(getFragmentManager());
         mViewPager.setAdapter(mExplorePagerAdapter);
 
+        mViewPager.setCurrentItem(2);
     }
 
 

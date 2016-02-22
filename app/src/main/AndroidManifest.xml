@@ -26,8 +26,6 @@
         <activity android:name=".search.SearchActivity"
             android:parentActivityName=".explore.ExploreActivity"/>
 
-        <activity android:name=".ErrorReportActivity"/>
-
         <activity android:name=".history.HistoryActivity"
             android:parentActivityName=".explore.ExploreActivity"/>
 
@@ -35,6 +33,18 @@
             android:parentActivityName=".explore.ExploreActivity"/>
 
 
+        <activity android:name=".ErrorReportActivity"
+            android:theme="@style/Theme.Transparent"
+            />
+
+        <activity android:name=".PhotoDetailActivity"
+            android:parentActivityName=".explore.ExploreActivity"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

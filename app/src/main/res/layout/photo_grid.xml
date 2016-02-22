@@ -5,5 +5,7 @@
     style="@style/GridView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center">
+    android:stretchMode="columnWidth"
+    android:gravity="center"
+    android:background="@color/background_grey">
 </GridView>
