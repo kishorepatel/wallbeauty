@@ -46,10 +46,10 @@ public class RecentFragment extends Fragment {
     ArrayList<String> photoLinks;
     PhotoGridAdapter adapter;
 
-    String KEY = "8ab527212fbe0a8bd799dc5322908530";
-    String SECRET = "e2c51aec29d09722";
+    String KEY = "your key here";
+    String SECRET = "secret key here";
 
-    String link = "https://api.flickr.com/services/rest/?method=flickr.favorites.getList&api_key=8ab527212fbe0a8bd799dc5322908530&user_id=140322786%40N07&format=json&nojsoncallback=1";
+    String link = "https://api.flickr.com/services/rest/?method=flickr.favorites.getList&api_key=<yout key here>&user_id=140322786%40N07&format=json&nojsoncallback=1";
 
     @Nullable
     @Override
